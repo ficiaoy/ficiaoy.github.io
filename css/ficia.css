@@ -953,6 +953,10 @@ figcaption {
   letter-spacing: -1.5px;
 }
 
+.heading.xxl.show-mobile {
+  display: none;
+}
+
 .heading.l {
   margin-top: 0px;
   margin-bottom: 16px;
@@ -1566,6 +1570,10 @@ figcaption {
   padding: 3px;
 }
 
+.icon-in-circle.medium {
+  width: 65%;
+}
+
 .icon-circle {
   display: flex;
   width: 72px;
@@ -1836,7 +1844,7 @@ figcaption {
 
 .icon-list {
   display: flex;
-  margin-top: 40px;
+  margin-top: 16px;
   flex-direction: column;
   align-items: flex-start;
   grid-column-gap: 24px;
@@ -1857,6 +1865,10 @@ figcaption {
 
 .icon-list-item.centered {
   align-items: center;
+}
+
+.icon-list-item.centered.hide-link {
+  display: none;
 }
 
 .icon-list-text {
@@ -2260,7 +2272,7 @@ figcaption {
 }
 
 .blog-image-background {
-  background-image: linear-gradient(180deg, #f6f8fe 49%, #fff 50%);
+  background-image: linear-gradient(180deg, #f5f6f7 49%, #fff 50%);
 }
 
 .icon-wrapper {
@@ -2432,9 +2444,9 @@ figcaption {
   border-radius: 80px;
   background-color: #f3f1ff;
   transition: border-color 300ms ease, color 300ms ease, background-color 300ms ease;
-  color: #0b2471;
+  color: #265cff;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
 }
@@ -2482,6 +2494,84 @@ figcaption {
 .faq-link {
   color: #0b0b0b;
   font-weight: 500;
+}
+
+.grid-2 {
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.associate-list {
+  display: flex;
+  flex-direction: column;
+  grid-column-gap: 64px;
+  grid-row-gap: 64px;
+}
+
+.associate {
+  display: flex;
+  align-items: flex-start;
+}
+
+.associate-title {
+  width: 200px;
+  min-width: 200px;
+  margin-right: 220px;
+}
+
+.associate-logo {
+  width: 100%;
+}
+
+.associate-link {
+  color: #0b0b0b;
+}
+
+.link {
+  color: #0b0b0b;
+}
+
+.icon-circle-2 {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vw;
+  background-color: #2a2a2a;
+}
+
+.icon-circle-2.small {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(61, 83, 103, 0.05);
+}
+
+.user-image {
+  display: none;
+  width: 90px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.ceo-title {
+  color: #3d5367;
+}
+
+.ceo-wrapper {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ceo-name {
+  color: #3d5367;
+  font-weight: 600;
+}
+
+.ceo-info {
+  margin-left: 16px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3290,6 +3380,15 @@ figcaption {
 
   .faq-text {
     padding-right: 40px;
+  }
+
+  .associate-title {
+    margin-right: 100px;
+  }
+
+  .icon-circle-2 {
+    width: 64px;
+    height: 64px;
   }
 }
 
@@ -4212,6 +4311,25 @@ figcaption {
   .faq-text {
     padding-right: 20px;
   }
+
+  .associate.fade-in {
+    flex-direction: column;
+  }
+
+  .associate-title {
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+
+  .icon-circle-2 {
+    width: 56px;
+    height: 56px;
+  }
+
+  .icon-circle-2.small {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4260,6 +4378,14 @@ figcaption {
 
   .heading.xl.centered {
     text-align: left;
+  }
+
+  .heading.xxl.hide-mobile {
+    display: none;
+  }
+
+  .heading.xxl.show-mobile {
+    display: block;
   }
 
   .paragraph.s.white-text.center-mobile {
@@ -4612,6 +4738,17 @@ figcaption {
 }
 
 #w-node-_1fb57cd3-260c-a040-954a-d66327515aa7-56dfb9be {
+  -ms-grid-column: span 1;
+      grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+      grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_0ffe4da8-b71d-fb06-bb4c-22aa8931303e-85dfb9c1 {
   -ms-grid-column: span 1;
       grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -5233,6 +5370,28 @@ figcaption {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+#w-node-_001e5fec-0d95-6d97-0a8c-f8170ec41027-a39d46fb {
+  -ms-grid-column: span 1;
+      grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+      grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_001e5fec-0d95-6d97-0a8c-f8170ec41027-9ef10c96 {
+  -ms-grid-column: span 1;
+      grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+      grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
 }
 
 @media screen and (max-width: 767px) {
